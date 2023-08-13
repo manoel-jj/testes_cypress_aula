@@ -17,7 +17,7 @@ describe('Testes para a pagina de candidatura', () => {
 })
     
     it('Deve prencher formulario', () => {
-        cy.get('.Vaga_vagaLink__DeFkk').first().click()
+        cy.get('.Vaga_vagaLink__DeFkk').first().click() //.first() é utilizado para selecionar um novo elemento
         cy.get('input[name="nome-completo"]').type('manoel jailton')
         cy.get('input[name="email"]').type('manoeljailton@teste.com')
         cy.get('input[name="telefone"]').type('79 99779789')
